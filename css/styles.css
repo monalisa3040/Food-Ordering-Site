@@ -1,0 +1,191 @@
+body{
+    margin:0;
+    padding:0;
+}
+.h-primary{
+    padding: 32px;
+}
+
+/* NAVIGATION AND LOGO */
+
+.logo{
+    height:73px;
+    width: 79px;
+    margin: 19px;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.navItems{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 44px;
+    top: 25px;
+}
+
+.item{
+    text-align: left;
+}
+
+.item a{
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+}
+.item a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* SECTION HOME */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    
+}
+
+#home::before{
+    content: "";
+    background: url('../img/salad-2068220_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 642px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+#home h1{
+    color:white;
+    font-size: 3.2rem;
+}
+
+#home p{
+    margin: 3px auto;
+    color: #fff;
+}
+
+
+
+/* SECTION SERVICES_CONTAINER */
+#services-container{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.center{
+    text-align: center;
+}
+
+#services{
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid #330;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 23px;
+    background: #fff;
+}
+
+.box-images{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+/* SECTION CLIENT-SECTION */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url(../img/pexels-trang-doan-1092730.jpg)no-repeat center center/cover;
+ bottom: -20px;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+/* SECTION CONTACT */
+#contact{
+    text-align: center;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/pexels-david-sun-955081.jpg)no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#contact-box{
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+.form-group{
+    padding: 3px;
+    width: 508px;
+    margin: 11px auto;
+    border-radius: 9px;
+}
+
+#contact-box textarea{
+    padding-right: 6px;
+}
+
+
+/* FOOTER */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
